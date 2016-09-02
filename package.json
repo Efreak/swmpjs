@@ -1,0 +1,25 @@
+{
+  "name": "swmpjs",
+  "version": "1.0.0",
+  "description": "Nodejs port of fuzzymannerz/swmp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Efreak/swmpjs.git"
+  },
+  "author": "Efreak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Efreak/swmpjs/issues"
+  },
+  "homepage": "https://github.com/Efreak/swmpjs",
+  "dependencies": {
+    "ejs": "^2.5.1"
+  },
+  "optionalDependencies": {
+    "uname": "0.0.2"
+  }
+}
