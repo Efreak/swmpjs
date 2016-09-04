@@ -3,7 +3,6 @@ var fs = require('fs');
 var ejs = require('ejs');
 var express = require('express');
 var system = require('./lib/system.js');
-system.getDiskData([]);
 var morgan = require('morgan');
 
 var config = require('minimist')(process.argv.slice(2), {
