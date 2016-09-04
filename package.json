@@ -1,6 +1,6 @@
 {
   "name": "swmpjs",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Nodejs port of fuzzymannerz/swmp",
   "main": "index.js",
   "scripts": {
