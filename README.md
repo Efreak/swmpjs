@@ -1,5 +1,14 @@
 # SWMPjs
 
+[![GitHub version](https://img.shields.io/github/release/Efreak/swmpjs.svg?label=ver)](https://github.com/Efreak/swmpjs/releases/latest)
+[![GitHub tag](https://img.shields.io/github/tag/Efreak/swmpjs.svg)](https://github.com/Efreak/swmpjs/tags/latest)
+[![node](https://img.shields.io/node/v/swmpjs.svg)](https://npmjs.com/package/swmpjs)
+[![Repo Size](https://reposs.herokuapp.com/?path=Efreak/swmpjs)]()
+[![License](https://img.shields.io/badge/license-MIT-44CC11.svg)](https://efreak.mit-license.org)
+[![Downloads per month](https://img.shields.io/npm/dm/swmpjs.svg?label=DLs)](https://npmjs.com/package/swmpjs)
+
+[![Stats](https://nodei.co/npm/swmpjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/swmpjs/)
+
 A port of [fuzzymannerz/swmp](https://github.com/fuzzymannerz/swmp) to nodejs.
 
 **A responsive, eye-pleasing Linux server statistics dashboard.**
