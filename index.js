@@ -2,9 +2,8 @@
 var fs = require('fs');
 var ejs = require('ejs');
 var express = require('express');
-var system = require('./lib/system.js');
 var morgan = require('morgan');
-
+var os = require('os');
 var config = require('minimist')(process.argv.slice(2), {
 	string: ["theme","listen","interface","port","title","reload"],
 	boolean: "errors",
@@ -19,7 +18,17 @@ var config = require('minimist')(process.argv.slice(2), {
 		console.log("\t--reload\t60\tHow often to refresh the page (in seconds)?");
 	}
 });
+
+var system = require('./lib/system.js');
+
 var app = express();
+
+var getTitle = function(){
+	return config.title.replace("{hostname}",os.hostname())
+		.replace("{ip}",system.getLanIp([],config).join(" "))
+		.replace("{os}",system.getOperatingSystem([]))
+		.replace("{kernel}",system.getKernel([]));
+}
 
 app.use(morgan('combined'));
 app.set('view engine','ejs');
@@ -47,9 +56,8 @@ app.get('/', function(req, res){
 		network: system.getNetworkData(errors),
 		disk: system.getDiskData(errors),
 		errors: errors,
-		title: config.title,
+		title: getTitle(),
 		config: {
-			title: config.title,
 			theme: req.query && req.query.theme ? req.query.theme : config.theme,
 			reload: config.reload,
 			show_errors: config.errors
