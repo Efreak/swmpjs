@@ -22,5 +22,9 @@
     "minimist": "^1.2.0",
     "morgan": "^1.7.0"
   },
-  "bin": "index.js"
+  "bin": "index.js",
+  "engines": {
+    "node": "^6.4.0",
+    "npm": "^3.10.3"
+  }
 }
