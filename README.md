@@ -71,6 +71,7 @@ location /SWMPjs/ {
 | --port | 8000 | what port to bind to |
 | --theme | simplex | pick a theme from [css/themes](https://github.com/Efreak/swmpjs/tree/master/css/themes).|
 | --interface | eht0 | what interface to list the IP(s) for at the top, next to the hostname |
+| --reload | 60 | How often to reload the page automatically, in seconds |
 
 ## Themes
 SWMPjs includes a selection of themes. The default being **simplex**. (The red and white one above)
