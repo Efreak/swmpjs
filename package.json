@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/Efreak/swmpjs",
   "dependencies": {
-    "ejs": "^2.5.1"
+    "ejs": "^2.5.1",
+    "minimist": "^1.2.0",
+    "morgan": "^1.7.0"
   },
-  "optionalDependencies": {
-    "uname": "0.0.2"
-  }
+  "bin": "index.js"
 }
