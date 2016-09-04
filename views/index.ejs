@@ -35,12 +35,12 @@
     <link rel="stylesheet" href="css/tablesaw.css">
     <script src="js/table.js"></script>
     <script>
-        var cpudata = <%= cpudata %>;
-        var ramdata = <%= ramdata %>;
-        var bootupdata = <%= bootTime %>;
-        var swapdata = <%= swap %>;
-        var networkdata = <%= network %>;
-        var diskdata = <%= disk %>;
+        var cpudata = <%- JSON.stringify(cpudata) %>;
+        var ramdata = <%- JSON.stringify(ramdata) %>;
+        var bootupdata = <%- JSON.stringify(bootTime) %>;
+        var swapdata = <%- JSON.stringify(swap) %>;
+        var networkdata = <%- JSON.stringify(network) %>;
+        var diskdata = <%- JSON.stringify(disk) %>;
     </script>
 </head>
 <body>
