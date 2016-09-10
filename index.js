@@ -31,6 +31,7 @@ var getTitle = function(){
 }
 
 app.use(morgan('combined'));
+app.set('trust proxy', 'loopback,uniquelocal');
 app.set('view engine','ejs');
 app.get('/', function(req, res){
 	var errors = [];
