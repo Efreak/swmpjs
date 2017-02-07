@@ -66,7 +66,7 @@ app.get('/', function(req, res){
 	}
 	res.render('index.ejs', data);
 });
-app.use(express.static('js'));
-app.use(express.static('css'));
-app.use(express.static('.',{extensions: ['svg','png','ico']}));
+app.use('/js', express.static(__dirname+'/js'));
+app.use('/css', express.static(__dirname+'/css'));
+app.use('/', express.static(__dirname,{extensions: ['svg','png','ico']}));
 app.listen(parseInt(config.port),config.listen);
